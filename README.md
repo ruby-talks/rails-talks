@@ -15,10 +15,23 @@ This gem using gem `talks` and overwrites some of rails methods when you call `r
 
 ### Using rails-talks
 
+Now only `rails-talks test` function available. It runs `bundle exec rake test` with before and after `talks` hooks.
+
 ```bash
 $ gem install rails-talks
 $ rails-talks test # instead of just `bundle exec rake test`
 ```
+
+You can work with `rails-talks test` just the same as with original `bundle exec rake test` - with some options and customizations:
+
+`You are in .../rails/activesupport folder`
+```bash
+$ TEST_DIR=core_ext RUBYOPT=-W0 rails-talks test
+# instead of
+$ TEST_DIR=core_ext RUBYOPT=-W0 bundle exec rake test
+```
+
+How to customize voices for `talks` you can find in [talks](https://github.com/ruby-talks/talks) repo.
 
 More info later
 
