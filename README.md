@@ -1,4 +1,4 @@
-# Rails-talks gem — now your rails repo and applications can talk with you :)
+# Rails-talks gem — now your rails repo and applications can talk
 
 ### This is beta now
 
