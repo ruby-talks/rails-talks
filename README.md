@@ -13,7 +13,7 @@ This idea appears on reddotrubyconf just as is :) I just thought about slow spec
 
 This gem using gem `talks` and overwrites some of rails methods when you call `rails-talks` instead of `rake` from your command line.
 
-### Using spec-talks
+### Using rails-talks
 
 ```bash
 $ gem install rails-talks
