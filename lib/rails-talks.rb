@@ -9,5 +9,9 @@ module RailsTalks
       Runner.run_tests opts
     end
 
+    def run(opts)
+      Runner.run_rake opts
+    end
+
   end
 end
