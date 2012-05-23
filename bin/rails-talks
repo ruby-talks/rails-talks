@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+rails_talks_dir = File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib'))
+$LOAD_PATH.unshift(rails_talks_dir) unless $LOAD_PATH.include?(rails_talks_dir)
+require 'rails-talks'
+
+if ARGV.first && ARGV.first == 'test'
+  RailsTalks.test ARGV
+else
+  RailsTalks.run ARGV
+end
